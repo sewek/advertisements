@@ -34,7 +34,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build --port $PORT",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run build",
