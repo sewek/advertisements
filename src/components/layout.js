@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, withPrefix } from "gatsby"
 
 import Header from "./header"
 import { Helmet } from "react-helmet"
@@ -22,8 +22,6 @@ const Layout = ({ children }) => {
 			}
 		}
 	`)
-
-	document.getElementsByTagName('body')[0].style.background = '#ecf0f1'
 
 	return (
 		<>

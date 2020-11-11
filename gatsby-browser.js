@@ -5,3 +5,11 @@
  */
 
 // You can delete this file if you're not using it
+const $ = require("jquery")
+
+export const onInitialClientRender = () => {
+  $(document).ready(function () {
+    console.log("The answer is don't think about it!")
+  });
+  $('body').css('background', '#ecf0f1')
+}
