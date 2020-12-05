@@ -32,6 +32,7 @@ function SEO({ description, lang, meta, title }) {
     <Helmet
       htmlAttributes={{
         lang,
+        class: 'text-gray-900 leading-tight',
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
@@ -69,6 +70,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
+      bodyAttributes={{
+        class: 'min-h-screen bg-gray-100'
+      }}
     />
   )
 }

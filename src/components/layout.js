@@ -26,13 +26,15 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-			<main>{children}</main>
-			<footer style={{
-				marginTop: `2rem`
-			}}>
-				© {new Date().getFullYear()}, Built with {` `}
-				<a href="https://www.gatsbyjs.com">Gatsby</a>
-			</footer>
+			<body className="min-h-screen bg-gray-100">
+				<div className="container">{children}</div>
+				<footer style={{
+					marginTop: `2rem`
+				}}>
+					© {new Date().getFullYear()}, Built with {` `}
+					<a href="https://www.gatsbyjs.com">Gatsby</a>
+				</footer>
+			</body>
 		</>
 	)
 }

@@ -5,11 +5,10 @@ import Enter from '../components/app/auth/Enter'
 import Home from '../components/app/Home'
 import Post from '../components/templates/Post'
 
-const App = ({location}) => {
-    const redirect = location.pathname.split('/').pop()
+const App = () => {
 
     return(
-        <Router basepath="/app">
+        <Router basepath="/">
             <Home default/>
 
             <Account path="/auth"/>
